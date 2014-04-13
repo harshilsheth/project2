@@ -1,0 +1,124 @@
+﻿body
+{
+	background-color: #000000;
+
+	
+}
+
+.style1
+{
+	background-image: url('Images/side1.jpg');
+	background-repeat: repeat-y;	
+}
+.side2
+{
+	background-image: url('Images/side2.jpg');
+	background-repeat: repeat-y;	
+}
+.sidebar
+{
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	font-style: normal;
+	color: #FFFFFF;
+	font-size: large;
+}
+a
+ {
+	color: #FFFFFF;
+	text-decoration :none;
+}
+
+a:hover
+ {
+	color: #FFFFFF;
+}
+h1 
+{
+	
+	letter-spacing: -2px;
+	font-size: 2em;
+	font-family: Lucida Sans;
+	font-weight:normal;
+	color: #ffffff;
+}
+.Packages
+{
+	background-color :#003366;
+	color:white;
+	font-family :Calibri  ;
+	font-size  :25px ;
+	font-weight :  bold;
+	width :500px;
+	font-family:Comic Sans MS ;
+	 
+}
+.hdr
+{
+	background-image: url('Images/side1.jpg');
+	background-repeat: repeat-y;
+	
+	font-family: Lucida Sans;
+	font-weight: bold;
+	font-style: normal;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	font-size: large;	
+}
+.td_top_left
+{    
+    background-image:url(newImages/A_Corner_left_Top.gif); 
+    background-repeat: no-repeat;
+    width: 10px;
+}
+
+.td_top_middle
+{
+    background-image: url(newImages/A_Top_Line.gif); 
+    background-repeat: repeat-x;
+    height: 6px;
+}
+.td_top_right
+{
+    background-image: url(newImages/A_Corner_Right_Top_6.gif); 
+    background-repeat: no-repeat;
+}
+/*---TR-Middle---*/
+
+.td_middle_left
+{
+    background-image: url(newImages/A_left_box_1.gif);
+    background-repeat: repeat-y;
+    width:6px; 
+}
+.td_middle_right
+{
+    background-image: url(newImages/A_rigth_box_new.gif); 
+    background-repeat: repeat-y;
+    width: 6px;
+}
+
+/*---TR-Bottom---*/
+.td_bottom_left
+{
+    background-image: url(newImages/A_Corner_left_Bottom.gif); 
+    background-repeat: no-repeat;
+}
+
+.td_bottom_middle
+{
+    background-image: url(newImages/A_Bottom_Line.gif); 
+    background-repeat: repeat-x;
+    height: 6px;
+}
+
+.td_bottom_bottom
+{
+    background-image: url(newImages/A_Corner_right_Bottom_6.gif); 
+    background-repeat: no-repeat;
+    width: 6px;
+}
+.linkbutton
+{
+	font-family: Comic Sans MS;
+}

@@ -1,0 +1,192 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs"
+    Inherits="AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="AdminStyleSheet.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style3
+        {
+            background-color: #FAB704;
+            height: 58px;
+            color: white;
+            font-family: Lucida Sans;
+            width: 246px;
+            font-weight: 900;
+            font-style: normal;
+            text-transform: capitalize;
+            font-size: larger;
+            text-align: center;
+            border: thin solid #295521;
+        }
+        .style4
+        {
+            background-color: #FAB704;
+            height: 70px;
+            color: white;
+            font-family: Lucida Sans;
+            width: 246px;
+            font-weight: 900;
+            font-style: normal;
+            text-transform: capitalize;
+            font-size: larger;
+            text-align: center;
+        }
+        .style5
+        {
+            background-color: #FAB704;
+            height: 62px;
+            color: white;
+            font-family: Lucida Sans;
+            width: 246px;
+            font-weight: 900;
+            font-style: normal;
+            text-transform: capitalize;
+            font-size: larger;
+            text-align: center;
+        }
+        .style6
+        {
+            background-color: #FAB704;
+            height: 61px;
+            color: white;
+            font-family: Lucida Sans;
+            width: 246px;
+            font-weight: 900;
+            font-style: normal;
+            text-transform: capitalize;
+            font-size: larger;
+            text-align: center;
+        }
+        .style7
+        {
+            background-color: #FAB704;
+            height: 63px;
+            color: white;
+            font-family: Lucida Sans;
+            width: 246px;
+            font-weight: 900;
+            font-style: normal;
+            text-transform: capitalize;
+            font-size: larger;
+            text-align: center;
+        }
+        .style8
+        {
+            background-color: #FAB704;
+            height: 65px;
+            color: white;
+            font-family: Lucida Sans;
+            width: 246px;
+            font-weight: 900;
+            font-style: normal;
+            text-transform: capitalize;
+            font-size: larger;
+            text-align: center;
+        }
+    </style>
+</head>
+<body bgcolor="#FAB704">
+    <form id="form1" runat="server">
+    <div>
+        <table>
+            <tr>
+                <td align="center" valign="top">
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/heading copy.jpg" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table cellpadding="0" cellspacing="0" width="1100px" align="center">
+                        <tr>
+                            <td align="center" valign="top">
+                                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/nehatravel copy.jpg" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td width="600px">
+                            </td>
+                            <td align="right" width="300px">
+                                <asp:Label ID="lblUName" runat="server" Text="Welcome Admin"></asp:Label>
+                            </td>
+                            <td align="right" style="text-align: right; padding-left: 30px">
+                                <asp:LinkButton ID="lbtnLogout" runat="server" Text="LOGOUT" ForeColor="Black" OnClick="lbtnLogout_Click"></asp:LinkButton>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        </table>
+        <table style="border: thin solid #295521">
+            <tr>
+                <td class="style3" align="left">
+                    <a href="AdminHome.aspx">HOME</a>
+                    
+                </td>
+                <td>
+                    <table>
+                        <tr>
+                            <td class="style3" align="left">
+                                <a href="BookingMaster.aspx">BOOKING MASTER</a>
+                            </td>
+                            <td class="style3" align="left">
+                                <a href="AdminUserMaster.aspx">USER MASTER</a>
+                            </td>
+                            <td class="style3" align="left">
+                                <a href="SecurityImage.aspx">SECURITY IMAGE</a>
+                            </td >
+                            <td class="style3" align="left">
+                                <a href="TourMaster.aspx">TOUR MASTER</a>
+                            </td>
+                            <%--<td>
+                                <a href="TempBooking.aspx">TEMPORARY BOOKING</a>
+                            </td>--%>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class="style3" align="left">
+                    <a href="CountryMaster.aspx">COUNTRY</a>
+                </td>
+                <td rowspan="5" style="background: #FAB704; vertical-align: top">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td class="style3" align="left">
+                    <a href="StateMaster.aspx">STATE</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="style3" align="left">
+                    <a href="CityMaster.aspx">CITY</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="style3" align="left">
+                    <a href="PackageMaster.aspx">PACKAGES</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="style3" align="left">
+                    <a href="HotelMaster.aspx">HOTELS</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

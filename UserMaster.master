@@ -1,0 +1,196 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMaster.master.cs" Inherits="UserMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+     <link href="UserStyleSheet.css" rel="stylesheet" type="text/css" />
+     <style type="text/css">
+        .style1
+        {
+            background-image: url('Images/side1.jpg');
+            background-repeat: repeat-y;
+            width: 260px;
+        }
+        .style2
+        {
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <table align="center" id="mst" cellpadding="0" cellspacing="0" >
+            <tr>
+                <td>
+                    <table id="Heading" cellpadding="0" cellspacing="0" >
+                        <tr>
+                            <td>
+                                <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/logo1.jpg" />
+                            </td>
+                            <td align="left" valign="top">
+                                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/logo2.jpg" />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+               
+                   <table align= "left" cellpadding="0" cellspacing ="0" border ="0" width ="762px" >
+            <tr>
+                <td align="left" class="style1"  style ="height:120px" valign="top">
+                    <table cellpadding ="0" cellspacing ="0"  width ="261px">
+                        <tr>
+                            <td class="style2">
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align ="left" style ="height:20px; text-align :center " class="sidebar">
+                                <a href ="UserHome.aspx">HOME</a>
+                            </td>
+                        </tr>
+                       
+                                   
+                        <tr>
+                            <td class="style2">
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align ="left" class="sidebar" style ="height:20px; text-align :center ">
+                                <a href ="#">CONTACT US</a>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="style2">
+                                <br />
+                            </td>
+                        </tr>
+                        
+                        <tr>
+                            <td align ="left" class="sidebar" style ="height:20px; text-align :center ">
+                                <a href ="#">ABOUT US</a>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td class="style2">
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style2">
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align ="left" class="style2" style ="text-align :center;  " >
+                           
+                            <h1 style ="color : Aqua ">Tours</h1>
+                            </td>
+                            
+                        </tr>
+                        
+                         <tr>
+                            <td align ="left" style ="height:20px; text-align :center " class="sidebar"  >
+                                <a href ="UserPackage.aspx">All Tours</a>
+                            </td>
+                        </tr>
+                        <tr>
+                        <td>
+                        <br />
+                        </td>
+                        </tr>
+                         <tr>
+                            <td align ="left" class="sidebar" style ="height:20px; text-align :center ">
+                                <asp:LinkButton ID="lbtnFamily" runat="server" onclick="lbtnFamily_Click">Family/Group Fun</asp:LinkButton>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td "style2">
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align ="left" class="sidebar" style ="height:20px; text-align :center ">
+                                <asp:LinkButton ID="lbtnHoneyMoon" runat="server" onclick="lbtnHoneyMoon_Click">HoneyMoon Delight</asp:LinkButton>
+                            </td>
+                        </tr>
+                         <tr>
+                            <td "style2">
+                                <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align ="left" class="sidebar" style ="height:20px; text-align :center ">
+                                <a href ="#"></a>
+                                <asp:LinkButton ID="lbtnReligious" runat="server" onclick="lbtnReligious_Click">  Religious Delight</asp:LinkButton>
+                            </td>
+                        </tr>
+                                    
+                    </table>
+                </td>
+                <td align="left" class="side2" valign="top">
+                    <table width="100%">
+                        <tr>
+                        <td align="right">
+                        <table cellpadding="10" cellspacing="10" width ="500px">
+                        <tr>
+                       
+                            <td>
+                                <asp:Label ID="LBmesg" runat="server" Font-Bold="True" Font-Size="Large" 
+                                    ForeColor="White"></asp:Label>
+                            </td>
+                            
+                            <td>
+                                <asp:LinkButton ID="lbtnViewBooking" runat="server" Font-Bold="True" 
+                                    Font-Size="Large" CausesValidation ="false" CssClass="linkbutton"  
+                                    Visible ="false" Enabled ="false" onclick="lbtnViewBooking_Click" >View Your Booking</asp:LinkButton>
+                            </td>
+                            <td>
+                                <asp:LinkButton ID="LinkButton1" runat="server" Font-Bold="True" 
+                                    Font-Size="Large" OnClick="LinkButton1_Click" CausesValidation ="false" CssClass="linkbutton">Registration</asp:LinkButton>
+                            </td>
+                           
+                            <td>
+                            <asp:LinkButton ID="LinkButton2" runat="server" Font-Bold="True" Font-Size="Large" 
+                                    OnClick ="LinkButton2_Click" CausesValidation ="false" CssClass="linkbutton">Login</asp:LinkButton>
+                            </td>
+                       </tr>
+                    </table>
+                 </td>
+                         </tr>
+               <tr>
+                  <td align="left" >
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/footer.jpg" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>

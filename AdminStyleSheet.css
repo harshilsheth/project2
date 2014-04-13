@@ -1,0 +1,61 @@
+﻿body {
+}
+.menu
+{
+    background-color: #FAB704;
+    height: 40px;
+    color :white;
+	
+	font-family :Lucida Sans;  
+	width :200PX;
+
+	font-weight:  900;
+	font-style: normal;
+	text-transform: capitalize;
+
+	font-size:larger;
+}
+a
+{
+    font-family : Lucida Sans;
+   
+    font-weight: bold;
+    height: auto;
+    color: white ;
+    width: 40px;
+    text-decoration :none;
+    text-transform :none ;
+}
+a:active, a:hover
+{
+	color: Green ;
+	text-transform :none ;
+	text-decoration :none;
+}
+.text
+{
+    background-color: #FAB704;
+    
+    color :#2D5522;
+	font-family :Lucida Sans;  
+	width :200PX;
+	font-weight: bold;
+	font-style: normal;
+	text-transform: capitalize;
+
+	font-size: large;
+}
+
+.bgimg
+{
+	background-image: url('Images/ad2.jpg');
+background-repeat: repeat;	
+	
+}
+.head
+{
+	font-family: Verdana;
+	font-weight: bold;
+	color:White;
+	background:#2D5522;
+}
